@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My solution](https://your-solution-url.com)
-- Live Site URL: [Live](https://your-live-site-url.com)
+- Solution URL: [My solution](https://github.com/Gulzhub/testimonials-grid-section)
+- Live Site URL: [Live](https://gulzhub.github.io/testimonials-grid-section/)
 
 ## My process
 This is the first project where I tried grid and it is so fun to make 2D layouts which was a bit tough in case of flexbox.
