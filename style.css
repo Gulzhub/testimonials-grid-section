@@ -154,7 +154,7 @@ p.title {
 
     main {
         grid-template-columns: repeat(4, 255px);
-        grid-template-rows: repeat(2, 0.8fr);
+        grid-template-rows: repeat(2, 300px);
     }
 
     .card5 {
