@@ -7,31 +7,36 @@
     --light-grayish-blue: hsl(210, 46%, 95%);
 }
 
-
-body {
-    box-sizing: border-box;
-    background-color: var(--light-grayish-blue);
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 13px;
-}
-
 *,
 *::after,
 *::before {
-    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    background-color: var(--light-grayish-blue);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 0.8125em;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    padding: 0.5rem;
+}
+
 
 main {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
-    margin: 0 auto;
 }
 
-p.title {
-    font-size: 20px;
+.title {
+    font-size: 1.25rem;
     font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 .card {
@@ -42,6 +47,15 @@ p.title {
     box-shadow: 15px 15px 30px rgba(0 0 0 / 10%);
 }
 
+.review {
+    opacity: 0.6;
+    line-height: 1.4;
+}
+
+.tag {
+    opacity: 0.7;
+}
+
 .violet {
     background-color: var(--moderate-violet);
     background-image: url(images/bg-pattern-quotation.svg);
@@ -49,17 +63,9 @@ p.title {
     background-position: top right 2rem;
 }
 
+
 .violet .same-color {
     color: var(--light-grayish-blue);
-}
-
-.tag {
-    opacity: 0.7;
-}
-
-.review {
-    opacity: 0.6;
-    line-height: 1.4;
 }
 
 .gray {
@@ -99,6 +105,7 @@ p.title {
 .person {
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .person img {
@@ -117,7 +124,6 @@ p.title {
         align-items: stretch;
         justify-content: center;
         grid-gap: 1rem;
-        margin: 50px auto;
     }
 
     .card {
